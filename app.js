@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
+  const vidasDisplay = document.querySelector('#vidas')
   let cardsChosen = []
   let cardsChosenId = []
   let cardsWon = []
@@ -79,10 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
-      alert('You have clicked the same image!')
+      alert('¡Has hecho clic en la misma imagen!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('You found a match')
+      alert('Encontraste una coincidencia')
       cards[optionOneId].setAttribute('src', 'images/white.png')
       cards[optionTwoId].setAttribute('src', 'images/white.png')
       cards[optionOneId].removeEventListener('click', flipCard)
@@ -91,7 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
-      alert('Sorry, try again')
+      var vides;
+        for (Vides = 4; vides <= 0; contador++)
+        {
+          document.write(vides + " ");
+          vidasDisplay.textContent = cardsWon.length
+      }
+        alert('Perdón intente de nuevo')
     }
     cardsChosen = []
     cardsChosenId = []
