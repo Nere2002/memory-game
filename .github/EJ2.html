@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <script type language="javascript">
+            
+            function cambia(valor){
+            document.all(valor).width="150";
+            document.all(valor).height="150";
+            }
+            function cambia2(valor2)
+            {
+            document.all(valor2).width="28";
+            document.all(valor2).height="30";
+            }
+        </script>
+    </head>
+    <body>
+    <img alt src="blank.png" border="0" name="img" onMouseOver="cambia(this.name);" onmouseout="cambia2(this.name);">
+    </body>
+</html>
+
+
+
+
+
+
