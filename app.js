@@ -93,12 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
       var vides;
-        for (Vides = 4; vides <= 0; contador++)
+        for (Vidas = 4; vides <= 0; contador++)
         {
           document.write(vides + " ");
           vidasDisplay.textContent = cardsWon.length
+          if  (cardsWon.length === cardArray.length/2) {
+            alert('Perdón intente de nuevo')
+          }
       }
-        alert('Perdón intente de nuevo')
+        
     }
     cardsChosen = []
     cardsChosenId = []
