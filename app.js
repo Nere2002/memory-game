@@ -97,9 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           document.write(vides + " ");
           vidasDisplay.textContent = cardsWon.length
-          if  (cardsWon.length === cardArray.length/2) {
-            alert('Perdón intente de nuevo')
-          }
+          alert('Perdón intente de nuevo')
+          
       }
         
     }
